@@ -8,15 +8,6 @@ import './AnimatedBackground.css'
 const AnimatedBackground = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const imageArr                        = [image1, image2, image3];
-    const [isHovered, setIsHovered]       = useState(false);
-
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
 
     const backgroundSliderStyle = {
         padding: '80px',
@@ -41,11 +32,7 @@ const AnimatedBackground = () => {
       }, []);
 
     return(
-        <div 
-             style        = {backgroundSliderStyle}
-             onMouseEnter = {handleMouseEnter}
-             onMouseLeave = {handleMouseLeave}
-        >
+        <div style = {backgroundSliderStyle}>
             <div>
                 <h1 className = "headingTag">
                     Hey Folks. <br/>
