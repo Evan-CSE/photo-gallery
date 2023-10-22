@@ -18,8 +18,7 @@ const AnimatedBackground = () => {
         position: 'fixed',
         width: '100%',
         height: '100%',
-        zIndex: -1,
-        transition: '2s ease-in-out'//cubic-bezier(.19,.11,0,1.02)'
+        transition: '3s cubic-bezier(.19,.11,0,1.02)'
     };
 
     useEffect(() => {
